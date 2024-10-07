@@ -159,8 +159,9 @@ header h1 {
 .poet-image {
     display: block; /* Center the image */
     margin: 0 auto 20px; /* Add some space below the image */
-    max-width: 100%; /* Make sure it is responsive */
-    height: auto; /* Maintain aspect ratio */
+    width: 2cm; /* Set width to 2 cm */
+    height: 2cm; /* Set height to 2 cm */
     border-radius: 12px; /* Optional: Add rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
 }
+
