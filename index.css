@@ -1,1 +1,156 @@
+/* Reset browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body style with an old parchment look */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4ecd8;
+    color: #2c1e0f;
+    line-height: 1.8;
+    background-image: url('https://www.transparenttextures.com/patterns/old-wall.png');
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ccaa66;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Header with a poetic, ancient touch */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccaa66;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    color: #3e2b14;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px #8b6f4a;
+}
+
+/* Intro text */
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: #5c3d23;
+}
+
+/* Poem list styling */
+.poems-list h2 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    color: #3e2b14;
+    margin-bottom: 10px;
+}
+
+.poems-list ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.poems-list ul li {
+    margin: 15px 0;
+    position: relative; /* For positioning the tooltip */
+}
+
+.poems-list ul li a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    color: #5c3d23;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.poems-list ul li a:hover {
+    color: #9b6f41;
+}
+
+/* Tooltip styling */
+.tooltip {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 100%; /* Position it above the link */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ccaa66;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    white-space: nowrap; /* Prevent line breaks */
+    z-index: 10;
+    margin-bottom: 5px; /* Space between the tooltip and the link */
+}
+
+/* Show tooltip on hover */
+.poems-list ul li:hover .tooltip {
+    display: block; /* Show tooltip when hovered */
+}
+
+/* Poem section */
+.poem {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f8f0df;
+    border: 1px solid #ccaa66;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.poem h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #3e2b14;
+    text-align: center;
+    border-bottom: 2px solid #ccaa66;
+    padding-bottom: 5px;
+}
+
+.poem p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #5c3d23;
+    white-space: pre-wrap; /* Maintain line breaks */
+    font-family: 'Georgia', serif;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .poems-list ul li a {
+        font-size: 1.2em;
+    }
+
+    .poem h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Signature styling */
+.signature {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #5c3d23;
+}
