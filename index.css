@@ -154,3 +154,13 @@ header h1 {
     font-size: 1.1em;
     color: #5c3d23;
 }
+
+/* Image styling */
+.poet-image {
+    display: block; /* Center the image */
+    margin: 0 auto 20px; /* Add some space below the image */
+    max-width: 100%; /* Make sure it is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+}
